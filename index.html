@@ -1,0 +1,24 @@
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/67acc1a73a842732607de0f8/1ijtd8uch';  // Remplacez par votre propre ID Tawk.to
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+
+        // Récupérer les paramètres dynamiques de l'URL
+        var urlParams = new URLSearchParams(window.location.search);
+        var email = urlParams.get('email');  // Récupérer l'email passé dans l'URL
+
+        // Initialiser Tawk.to avec l'email de l'utilisateur
+        Tawk_API.onLoad = function () {
+            if (email) {
+                Tawk_API.setAttributes({
+                    'email': email  // Définir l'email comme attribut dans Tawk.to
+                });
+            }
+        };
+    })();
+</script>
